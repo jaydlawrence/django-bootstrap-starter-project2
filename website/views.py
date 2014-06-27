@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.http import HttpResponse
 
-from website.lib.ses_email import send_email
+#from website.lib.ses_email import send_email
 
 from website.models import LandingForm, ContributeForm
 
@@ -31,7 +31,7 @@ def index(request):
             landing_instance.save()
             show_invite = False
 
-            send_email("MY SITE: Newsletter signup", "email=" + request.POST["email"])
+            #send_email("MY SITE: Newsletter signup", "email=" + request.POST["email"])
 
         else:
             return HttpResponse("error")
@@ -55,7 +55,7 @@ def contribute(request):
             landing_instance.save()
             show_invite = False
 
-            send_email("MY SITE: Contact Us signup", "email=" + request.POST["email"])
+            #send_email("MY SITE: Contact Us signup", "email=" + request.POST["email"])
 
         else:
             return HttpResponse("error")

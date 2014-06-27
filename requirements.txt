@@ -4,15 +4,15 @@ South
 psycopg2
 werkzeug
 
-dj-database-url
+#dj-database-url
 python-social-auth
-boto
+#boto
 
 django-widget-tweaks
 
 #python-dateutils
 #django-storages
 
-gunicorn # Needed for heroku
+#gunicorn # Needed for heroku
 
 

@@ -25,7 +25,7 @@ elif DEPLOY_ENV == 'prod':
 PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 APP_NAME = 'website'
-AWS_STORAGE_BUCKET_NAME = 'django-bootstrap'
+#AWS_STORAGE_BUCKET_NAME = 'django-bootstrap'
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -207,16 +207,16 @@ SOCIAL_AUTH_SESSION_EXPIRATION = False
 # DATABASES #
 #############
 # Parse database configuration from $DATABASE_URL
-import dj_database_url
+#import dj_database_url
 
-DATABASES = {'default': dj_database_url.config(default='sqlite:/data.db')}
+#DATABASES = {'default': dj_database_url.config(default='sqlite:/data.db')}
 
 
 ###################
 # HEROKU settings #
 ###################
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 # Allow all host headers
-ALLOWED_HOSTS = ['*']
+#ALLOWED_HOSTS = ['*']
