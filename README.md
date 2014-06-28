@@ -1,6 +1,8 @@
 Django Bootstrap Starter Project
 ================================
-This project makes it really easy to create a Django project and publish it to Heroku.
+This project makes it really easy to create a Django project ~~and publish it to Heroku.~~
+
+*__I found this repo and it was almost exactly what I needed, except I didn't want to use heroku and amazon AWS, so I have made a few mofications to remove these dependecies__*
 
 See Demo:  http://django-bootstrap2.herokuapp.com
 
@@ -8,7 +10,7 @@ See Demo:  http://django-bootstrap2.herokuapp.com
 What is included?
 -----------------
 * Django 1.5
-* Heroku settings
+* ~~Heroku settings~~ *Heroku dependenceis removed in this fork*
 * Python Social Auth. Oauth for Facebook, Google, Yahoo!
 * Jquery
 * Bootstrap
@@ -19,13 +21,14 @@ What you need to get started?
 
 ### Mininmum requirements
 
-* Heroku account
+* ~~Heroku account~~
 
 
 ### Advance requirements
 
 * Facebook Oauth keys: FACEBOOK_APP_ID, FACEBOOK_API_SECRET
 * Google OAuth keys: SOCIAL_AUTH_GOOGLE_OAUTH2_KEY, SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET
+** Register redirect URLs in Google Developer Console
 
 
 
@@ -34,11 +37,12 @@ Setup Steps
 
 * git clone git@github.com:ddehghan/django-bootstrap-starter-project2.git myproject
 * cd myproject
-* heroku create <my_cool_project_name>
+* ~~heroku create <my_cool_project_name>~~
 * source myproject/settings_local.env.sh
-* sh myproject/settings_local.heroku.sh
-* git push heroku master
-* heroku run python manage.py syncdb
+* sh myproject/settings_local.heroku.sh *still useful for setting environmental variables*
+* ~~git push heroku master~~
+* *set DB variables in the relevant setting files*
+* ~~heroku run~~ python manage.py syncdb
 
 * Great Success! You are done.
 
