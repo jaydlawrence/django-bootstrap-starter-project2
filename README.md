@@ -19,7 +19,7 @@ What is included?
 What you need to get started?
 -----------------------------
 
-### Mininmum requirements
+### Minimum requirements
 
 * ~~Heroku account~~
 
